@@ -1,0 +1,277 @@
+/* creating a variable for color */
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600: #dc0000;
+    --body :#f9f6ff;
+    --max-width:1200px;
+}
+
+*
+{
+    margin: 0px;
+     padding:0px;
+     box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+     font-family: 'Roboto', sans-serif;
+     scroll-behavior: smooth;
+}
+
+/* trick */
+section{
+    scroll-margin: 50px;
+}
+/* reset ul list pointers */
+ul{
+    list-style: none;
+}
+
+/* anchor tag ka uska text decoration none ker denge  */
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* changing the color of a header section  */
+header{
+     background-color: var(--purple300);
+     position: sticky;
+     top: 0;
+     z-index: 100;
+     /* applying shadow */
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* selecting nav bar and display it as a  flex */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+/* diplaying nav ul as a flex  */
+
+nav ul
+{
+    display: flex;
+    gap:20px;
+}
+
+.logo
+{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* creating a underline when hover on a list items */
+nav ul li
+{
+    border-bottom: 2px solid transparent;
+    transition:0.2s ease-in-out ;
+}
+nav ul li:hover
+{
+    border-bottom: 2px solid white;
+    transition:0.2s ease-in-out ;
+}
+
+
+/* **************** here we are done with your nav section ****************** */
+
+
+/* 
+CSS for the hero section of the website  */
+
+.hero-section
+{
+    background-image: url(./images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+   display: grid;     /*  BELOW THREE LINES ARE USED TO 
+                       PUT CONTENT IN CENTER */
+    place-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap:30px ;
+}
+
+.hero-section h1 {
+
+    font-size:96px;
+   
+}
+.hero-section h3 {
+    font-size:32px;
+}
+
+/* start working on music section */
+
+.music-section
+{
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+
+.music-section .container
+{
+   display: flex;
+   flex-direction: column;
+   gap:30px;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   
+}
+
+
+/* spliting the mage in half  */
+.ipad-iphone-img
+{    margin-top: -400px;  
+    position: relative;
+    top: 400px;
+}
+
+/* univesally design od button */
+
+button{
+    padding: 10px 15px ;
+    border: none;
+
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    opacity: 0.8 ;
+    transition: 0.2s ease-in-out;
+}
+
+.primary-btn
+{
+    background-color:var(--red600);
+    color: white;
+}
+
+.secondary-btn
+{
+    background-color:var(--purple300);
+    color: white;
+}
+
+.about-music
+{
+padding-top: 500px;
+display: grid;
+place-items: center;
+text-align: center;
+margin-bottom: 50px;
+gap: 50px;
+
+}
+
+.about-music h3
+{
+  font-weight: 900;
+  font-size: 25px;
+
+}
+
+
+/* ********* start working on video section *********** */
+
+.video-section
+{
+    background-image: url(./images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+/* if we zoom in to handel that case this css is used  */
+
+.hero-section .video-section
+{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* start working on gift card section */
+
+.gift_section
+{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    gap: 50px;
+}
+
+.gift_section-content
+{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 20px;
+    
+}
+
+
+/*  css for footer section */
+.footer-section
+{
+    background-color: var(--purple600);
+    color: white;
+    padding: 20px;
+}
+.footer_content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_content h4
+{
+   padding-bottom: 10px;
+   border-bottom: 2px solid white;
+   margin-bottom: 10px;
+}
+.footer-lower
+{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
